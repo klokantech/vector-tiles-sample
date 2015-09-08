@@ -1,0 +1,123 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: klokantech.97cbd1e1
+  rev: s-074d8caa
+  saveCenter: true
+attribution: Natural Earth Data
+center: 
+  - 0
+  - 7.0137
+  - 0
+description: Natural Earth Data with .shp data from  TileMill
+Layer: 
+  - id: state
+    Datasource: 
+      file: files/488ffc05-10m-admin-1-states-provinces-lines-shp.shp
+      type: shape
+    description: ''
+    fields: 
+      ADM0_A3: String
+      COUNTRYNAM: String
+      FeatureCla: String
+      MAP_COLOR: Number
+      NAME1: String
+      SCALERANK: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
+  - id: country
+    Datasource: 
+      file: files/1aa2d236-10m-admin-0-countries.shp
+      type: shape
+    description: ''
+    fields: 
+      ABBREV: String
+      ADM0_A3: String
+      ADM0_DIF: Number
+      ADMIN: String
+      FeatureCla: String
+      FIPS_10_: Number
+      GDP_MD_EST: Number
+      GEOU_DIF: Number
+      ISO_A2: String
+      ISO_A3: String
+      ISO_N3: Number
+      LabelRank: Number
+      LEVEL: Number
+      MAP_COLOR: Number
+      NAME: String
+      NAME_FORMA: String
+      NAME_SORT: String
+      POP_EST: Number
+      POSTAL: String
+      ScaleRank: Number
+      SOV_A3: String
+      SOVEREIGNT: String
+      TERR_: String
+      TYPE: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
+  - id: land-border-country
+    Datasource: 
+      file: files/e298d343-10m-admin-0-boundary-lines-land.shp
+      type: shape
+    description: ''
+    fields: 
+      FeatureCla: String
+      ScaleRank: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
+  - id: geo-lines
+    Datasource: 
+      file: files/b0a28508-10m-geographic-lines.shp
+      type: shape
+    description: ''
+    fields: 
+      DISPLAY: String
+      ScaleRank: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
+  - id: country-name
+    Datasource: 
+      file: files/b56c4047-10m-admin-0-country-points.shp
+      type: shape
+    description: ''
+    fields: 
+      ABBREV: String
+      ADM0_A3: String
+      ADM0_DIF: Number
+      ADMIN: String
+      FeatureCla: String
+      FIPS_10_: Number
+      GDP_MD_EST: Number
+      GEOU_DIF: Number
+      ISO_A2: String
+      ISO_A3: String
+      ISO_N3: Number
+      LabelRank: Number
+      LEVEL: Number
+      MAP_COLOR: Number
+      NAME: String
+      NAME_FORMA: String
+      NAME_SORT: String
+      POP_EST: Number
+      POSTAL: String
+      ScaleRank: Number
+      SOV_A3: String
+      SOVEREIGNT: String
+      TERR_: String
+      TYPE: String
+      Z_ABBREV: Number
+      Z_ADMIN: Number
+      Z_NAME: Number
+      Z_POSTAL: Number
+    properties: 
+      "buffer-size": 64
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 6
+minzoom: 0
+name: Countries

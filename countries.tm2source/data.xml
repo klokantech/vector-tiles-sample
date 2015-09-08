@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<Parameters>
+  <Parameter name="attribution"><![CDATA[Natural Earth Data]]></Parameter>
+  <Parameter name="center">0,7.0137,0</Parameter>
+  <Parameter name="description"><![CDATA[Natural Earth Data with .shp data from  TileMill]]></Parameter>
+  <Parameter name="format">pbf</Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"state","description":"","fields":{"NAME1":"String","SCALERANK":"Number","COUNTRYNAM":"String","FeatureCla":"String","ADM0_A3":"String","MAP_COLOR":"Number"}},{"id":"country","description":"","fields":{"ScaleRank":"Number","LabelRank":"Number","FeatureCla":"String","SOVEREIGNT":"String","SOV_A3":"String","ADM0_DIF":"Number","LEVEL":"Number","TYPE":"String","ADMIN":"String","ADM0_A3":"String","GEOU_DIF":"Number","NAME":"String","ABBREV":"String","POSTAL":"String","NAME_FORMA":"String","TERR_":"String","NAME_SORT":"String","MAP_COLOR":"Number","POP_EST":"Number","GDP_MD_EST":"Number","FIPS_10_":"Number","ISO_A2":"String","ISO_A3":"String","ISO_N3":"Number"}},{"id":"land-border-country","description":"","fields":{"ScaleRank":"Number","FeatureCla":"String"}},{"id":"geo-lines","description":"","fields":{"DISPLAY":"String","ScaleRank":"Number"}},{"id":"country-name","description":"","fields":{"ScaleRank":"Number","LabelRank":"Number","Z_POSTAL":"Number","Z_ABBREV":"Number","Z_NAME":"Number","Z_ADMIN":"Number","FeatureCla":"String","SOVEREIGNT":"String","SOV_A3":"String","ADM0_DIF":"Number","LEVEL":"Number","TYPE":"String","ADMIN":"String","ADM0_A3":"String","GEOU_DIF":"Number","NAME":"String","ABBREV":"String","POSTAL":"String","NAME_FORMA":"String","TERR_":"String","NAME_SORT":"String","MAP_COLOR":"Number","POP_EST":"Number","GDP_MD_EST":"Number","FIPS_10_":"Number","ISO_A2":"String","ISO_A3":"String","ISO_N3":"Number"}}]}]]></Parameter>
+  <Parameter name="maxzoom">6</Parameter>
+  <Parameter name="minzoom">0</Parameter>
+  <Parameter name="name"><![CDATA[Countries]]></Parameter>
+</Parameters>
+
+
+<Layer name="state"
+  buffer-size="8"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[files/488ffc05-10m-admin-1-states-provinces-lines-shp.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="country"
+  buffer-size="8"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[files/1aa2d236-10m-admin-0-countries.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="land-border-country"
+  buffer-size="8"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[files/e298d343-10m-admin-0-boundary-lines-land.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="geo-lines"
+  buffer-size="8"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[files/b0a28508-10m-geographic-lines.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="country-name"
+  buffer-size="64"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[files/b56c4047-10m-admin-0-country-points.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>
