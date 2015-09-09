@@ -9,9 +9,9 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - 0.5713
-  - 45.6908
-  - 5
+  - 0
+  - 0
+  - 2
 description: Style converted from TileMill's Geographical Class made from Natural Earth data processed by MapBox.
 format: "png8:m=h"
 interactivity_layer: ''
@@ -19,7 +19,7 @@ layers: null
 maxzoom: 10
 minzoom: 0
 name: Countries
-source: "tmsource:///Users/klokan/Projects/vector-tiles-sample/countries.tm2source"
+source: "mapbox:///klokantech.97cbd1e1"
 styles: 
   - style.mss
   - labels.mss
