@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Countries</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.5/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.5/leaflet-src.js"></script>
+    <script>
+      function init() {
+          var mapBounds = new L.LatLngBounds(
+              new L.LatLng(-85.738076382392, -180),
+              new L.LatLng(84.79842793857, 180));
+          var mapMinZoom = 0;
+          var mapMaxZoom = 6;
+        var map = L.map('map').setView([0,0], 2);
+        L.tileLayer('countries-raster/{z}/{x}/{y}.png', {
+            minZoom: mapMinZoom, maxZoom: mapMaxZoom,
+            bounds: mapBounds
+        }).addTo(map);
+      }
+    </script>
+    <style>
+      html, body, #map { width:100%; height:100%; margin:0; padding:0; }
+    </style>
+  </head>
+  <body onload="init()">
+    <div id="map"></div>
+  </body>
+</html>
