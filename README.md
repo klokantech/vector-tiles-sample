@@ -2,13 +2,22 @@
 
 This repo documents results of tests on vector tiles as defined by MapBox and shows various variants of usage of these tiles on your own server.
 
-The repo contains two MapBox Studio projects: data source (.tm2source) and style (.tm2) necessary to create custom vector tiles (protobuf encoded MVT - MapBox Vector Tiles) packed in MBTiles and shows what can be done with such tiles.
+Results:
+<a href="http://klokantech.github.io/mapbox-gl-js-offline-example/"><img width="937" alt="screen shot 2015-09-26 at 23 43 45" src="https://cloud.githubusercontent.com/assets/59284/10125568/94fb0e50-6579-11e5-90ea-a92f6092ff4e.png"></a>
+
+- [Try the WebGL JavaScript Viewer](http://klokantech.github.io/mapbox-gl-js-offline-example/) + [the viewer source code](https://github.com/klokantech/mapbox-gl-js-offline-example)
+- [Download vector PBF MBTiles](https://github.com/klokantech/vector-tiles-sample/releases/download/v1.0/countries.mbtiles) - source projects are the in this repo
+- [Try the rendered raster tiles viewer](http://klokantech.github.io/vector-tiles-sample/) - [the viewer source code](https://github.com/klokantech/vector-tiles-sample/tree/gh-pages)
+- [Download raster PNG MBTiles](https://github.com/klokantech/vector-tiles-sample/releases/download/v1.0/countries-raster.mbtiles)
+
+
+The repo contains two MapBox Studio Classic projects: data source (.tm2source) and style (.tm2) necessary to create custom vector tiles (protobuf encoded MVT - MapBox Vector Tiles) packed in MBTiles and shows what can be done with such tiles.
 Both these projects contain the Mapnik's XML style usable with any mapnik-powered software, if mapnik is compiled together with [mapnik-vector-tiles](https://github.com/mapbox/mapnik-vector-tile).
 
-The look&feel of this sample is a port of GeographyClass example from Tilemill into TileMill2 aka MapBox Studio.
+The look&feel of this sample is a port of GeographyClass example from Tilemill into TileMill2 aka MapBox Studio Classic.
 It uses vector data (.shp) from NaturalEarthData.com, originally distributed by MapBox with the open-source TileMill project for use in the Geography Class example: https://github.com/mapbox/tilemill/tree/master/examples/geography-class
 
-## Work with MapBox Studio
+## Work with MapBox Studio Classic
 
 - Clone this repo or [download](https://github.com/klokantech/vector-tiles-sample/archive/master.zip) the files to you computer.
 - Start MapBox Studio (https://www.mapbox.com/mapbox-studio/)
