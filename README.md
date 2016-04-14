@@ -36,7 +36,7 @@ Such sample file can be also directly [downloaded as countries.mbtiles](https://
 ## Host the vector tiles on your own server
 
 It is easy to host the vector tiles on MapBox service, but if you want it on your own server
-is straightforward as well by installing [Tileserver-PHP project](https://github.com/klokan/tileserver-php/).
+is straightforward as well by installing [Tileserver-PHP project](https://github.com/klokantech/tileserver-php/).
 If you a have an Apache+PHP hosting - just unpack the project files and drop the MBTiles with vector (or raster) tiles in the same directory. See this video tutorial: https://youtu.be/F6MvDvc5m-I?list=PLGHe6Moaz52PiQd1mO-S9QrCjqSn1v-ay
 
 Alternativelly you could also start the TileServer-PHP on your laptop with docker. The ready to use container is on [DockerHub](https://hub.docker.com/r/klokantech/tileserver-php/).
